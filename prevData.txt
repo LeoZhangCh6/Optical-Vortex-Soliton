@@ -1,3 +1,12 @@
+% ========= copy to plot ==========
+filename = 'eigenrmp1.mat';          
+dim = 30;                   
+R_range = [10 20 40 50 60 70 80];                 
+m_range = [1 2 3 4 5 6 7 8 10];                 
+P_0_range = logspace(-2, -1, 3)
+% %====================================%
+
+
 % ========= copy to plot ========== % copy and paste this box to "plottingpad.m"
 filename = 'eigenrmp2.mat';          % file namen (change every time!) 
 dim = 30;                     % number of basis vectors
@@ -62,13 +71,13 @@ m_range = [1 2 3 4 5];
 P_0_range = logspace(-1, 4, 50);                   
 % %===============================
 
-% ========= copy to plot ========== 
-filename = 'eigenrmp10.mat';        
-dim = 30;                                        
-R_range = [60];             
-m_range = [1];      
-P_0_range = [1 2 4 8 16 32 64 128 256 512 1024];  
-% %==========================
+% ========= copy to plot ========
+filename = 'eigenrmp10.mat';         
+dim = 20;                             
+R_range = [20 40 60 80];        
+m_range = [1 2 3 4 5];                                 
+P_0_range = linspace(3, 5, 4);                   
+% %===============================
 
 % ========= copy to plot ========== 
 filename = 'eigenrmp11.mat';        
