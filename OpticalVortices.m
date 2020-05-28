@@ -11,12 +11,13 @@ global dim R m P_0 basis;
 
 % copy and paste this box to "plottingpad.m"
 % ========= copy to plot ========
-filename = 'eigenrmp8.mat';         
+filename = 'eigenrmp9.mat';         
 dim = 20;                             
 R_range = [20];        
 m_range = [1 2 3 4 5];                                 
-P_0_range = linspace(1, 10000, 50);                   
+P_0_range = logspace(-1, 4, 50);                   
 % %===============================
+
 
 basis = cell(dim, 3);
 nr = length(R_range);

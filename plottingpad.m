@@ -2,14 +2,14 @@ clearvars, clearvars –global
 clear all, clear global 
 
 
-% ========= copy to plot ========
-filename = 'eigenrmp7.mat';         
-dim = 20;                             
-R_range = [20 40 60 80];        
-m_range = [1 2 3 4 5];                                 
-P_0_range = linspace(-5, 5, 30);                   
-% %===============================
 
+% ========= copy to plot ========
+filename = 'eigenrmp9.mat';         
+dim = 20;                             
+R_range = [20];        
+m_range = [1 2 3 4 5];                                 
+P_0_range = linspace(-1, 4, 50);                   
+% %===============================
 
 nr = length(R_range);
 nm = length(m_range);
@@ -53,21 +53,21 @@ p_range = 1:np;
 % ylim([-20, 0])
 % xlim([0, 20])
 
-for m = m_range
-%     plot(P_0_range, reshape(eigen_mat(1, m, :, 1), 1, []), '-s')
-    errorbar(P_0_range,...
-             reshape(eigen_mat(1, m, :, 1), 1, []), ...
-             reshape(eigen_mat(1, m, :, 2), 1, []), '-s')
-    hold on
-    
-%     plot(P_0_range, ones(size(P_0_range)) * -m^2/400 - 1)
+% for m = m_range
+% %     plot(P_0_range, reshape(eigen_mat(1, m, :, 1), 1, []), '-s')
+%     errorbar(P_0_range,...
+%              reshape(eigen_mat(1, m, :, 1), 1, []), ...
+%              reshape(eigen_mat(1, m, :, 2), 1, []), '-s')
 %     hold on
-end
-ylim([-2 0])
-xlim([0 11000])
-legend('m=1', 'm=2', 'm=3', 'm=4', 'm=5')
-ylabel('\beta, Propagation Constant')
-xlabel('P_{0}, Beam Power functional')
+%     
+% %     plot(P_0_range, ones(size(P_0_range)) * -m^2/400 - 1)
+% %     hold on
+% end
+% ylim([-2 0])
+% xlim([0 11000])
+% legend('m=1', 'm=2', 'm=3', 'm=4', 'm=5')
+% ylabel('\beta, Propagation Constant')
+% xlabel('P_{0}, Beam Power functional')
 
 % for m = m_range
 %     errorbar(R_range,...
